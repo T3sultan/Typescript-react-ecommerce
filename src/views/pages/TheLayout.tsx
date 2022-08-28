@@ -6,7 +6,7 @@ import Main from "./common/Main";
 const TheLayout = () => {
   return (
     <div>
-      <div>
+      <div className="py-5">
         <Header />
       </div>
       <main>

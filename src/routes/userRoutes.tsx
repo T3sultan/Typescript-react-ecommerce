@@ -1,4 +1,4 @@
-const userRoutes = [
+export const userRoutes = [
   {
     path: "/profile",
     name: "profile",
