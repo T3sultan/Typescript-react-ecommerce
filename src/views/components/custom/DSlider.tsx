@@ -1,5 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import image1 from "../../../assets/images/pic-1.jpg";
+import image2 from "../../../assets/images/pic.jpg";
+import image3 from "../../../assets/images/pic-2.jpg";
+import "swiper/css";
 
 const DSlider = () => {
   return (
@@ -10,10 +14,15 @@ const DSlider = () => {
         onSlideChange={() => console.log("slide change")}
         onSwiper={swiper => console.log(swiper)}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <img src={image1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image3} alt="" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );

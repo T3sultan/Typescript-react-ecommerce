@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import TheLayout from "./views/pages/TheLayout";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <TheLayout />
-    </div>
+    </BrowserRouter>
   );
 }
 
